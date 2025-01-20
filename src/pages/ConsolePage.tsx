@@ -505,7 +505,7 @@ export function ConsolePage() {
         <div className="content-logs">
           <div className="content-block conversation">
             <div className="content-block-title">Conversation</div>
-            {items.length &&
+            {items.length > 0 && 
             <div className="content-block-body" data-conversation-content>
               {items.map((conversationItem, i) => {
                 return (
